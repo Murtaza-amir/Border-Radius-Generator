@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Border Radius Generator">
+    <meta name="keywords" content="border-radius border radius generator">
+    <meta name="author" content="Farshad Aabir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Generator</title>
+    <link rel="stylesheet" href="../Plugins/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Plugins/highlightjs/css/highlightjs.css">
+    <link rel="stylesheet" href="../Plugins/highlightjs/Download/styles/atom-one-dark-reasonable.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="dialog" id="dialog">
+        <p>Code copied!</p>
+    </div>
+    <div class="toggle-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" class="bi bi-toggle-on" viewBox="0 0 16 16">
+            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+        </svg>
+    </div>
+
+    <main>
+        <div class="box-container">
+            <div class="border-box" id="borderBox" style="border-radius: 6px 6px 6px 6px;">
+                <div class="topLeft"><input type="number" id="topLeft" min="0" value="6"></div>
+                <div class="topRight"><input type="number" id="topRight" min="0" value="6"></div>
+                <div class="bottomLeft"><input type="number" id="bottomLeft" min="0" value="6"></div>
+                <div class="bottomRight"><input type="number" id="bottomRight" min="0" value="6"></div>
+            </div>
+            <div class="border-box-code">
+                <div class="actions">
+                    <span class="iconBtn" id="copy">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <pre><code id="borderRadiusCode">border-radius: 6px 6px 6px 6px;</code></pre>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Plugins/jQuery/jquery.js"></script>
+    <script src="../Plugins/highlightjs/js/Script.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
