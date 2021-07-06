@@ -3,7 +3,6 @@
 	--body-bg: #f6f8fa;
     --card-bg: #fff;
     --card-border: #d0d7de;
-    --input-bg: #fff;
     --input-border: #d0d7de;
     --input-text: #6e7781;
     --box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
@@ -14,7 +13,6 @@
 	--body-bg: #0d1117;
     --card-bg: #1c2128;
     --card-border: #30363d;
-    --input-bg: transparent;
     --input-border: #30363d;
     --input-text: #d0d7de;
     --box-shadow: 0 16px 32px rgba(1, 4, 9, 0.85);
@@ -180,7 +178,7 @@ img[alt="www.000webhost.com"] {
     position: absolute;
     width: 60px;
     height: 30px;
-    background-color: var(--input-bg);
+    background-color: var(--card-bg);
     border: 1px solid var(--input-border);
     border-radius: 3px;
 }
